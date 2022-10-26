@@ -12,11 +12,21 @@
 </head>
 <body>
   <div class="topnav" id="myTopnav">
-    <a href="#home" class="active"><i class="fa fa-fw fa-home"></i> HOME</a>
-    <a href="#achieve"><i class="fa fa-light fa-star"></i> ACHIEVEMENT</a>
-    <a href="#project"><i class="fa fa-fw fa-code"></i> PROJECT</a>
-    <a href="#family"><i class="fa fa-fw fa-users"></i> FAMILY</a>
-    <a href="#contact"><i class="fa fa-fw fa-envelope"></i> CONTACT</a>
+    <a href="#home" class="active" id="i1" onclick="activation(1)">
+      <i class="fa fa-fw fa-home"></i> HOME
+    </a>
+    <a href="#achieve" class="inactive" id="i2" onclick="activation(2)">
+      <i class="fa fa-light fa-star"></i> ACHIEVEMENT
+    </a>
+    <a href="#project" class="inactive" id="i3" onclick="activation(3)">
+      <i class="fa fa-fw fa-code"></i> PROJECT
+    </a>
+    <a href="#family" class="inactive" id="i4" onclick="activation(4)">
+      <i class="fa fa-fw fa-users"></i> FAMILY
+    </a>
+    <a href="#contact" class="inactive" id="i5" onclick="activation(5)">
+      <i class="fa fa-fw fa-envelope"></i> CONTACT
+    </a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
