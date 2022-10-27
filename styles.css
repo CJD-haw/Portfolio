@@ -35,10 +35,13 @@
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 650px) {
-    .topnav a:not(:first-child) {display: none;}
+    .topnav a:not(:first-child) { display: none; }
+    .topnav a:first-child { width: 90%; }
     .topnav a.icon {
         float: right;
         display: block;
+        width: 10%;
+        text-align: left;
     }
 }
   
@@ -62,54 +65,4 @@ body {
     background-image: url(https://media.giphy.com/media/9bTjZrytydVRK/giphy.gif);
     background-repeat: repeat;
     background-size: fixed;
-}
-
-div .i a:hover, .f a:hover {
-    color: black;
-    font-size: 32px;
-}
-
-.i1 {
-    margin-top: 40px;
-    padding-top: 20px;
-    padding-bottom : 20px;
-    text-align: center;
-    width: 300px;
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-.i2 {
-    text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 1);
-}
-
-.f1 {
-    margin-top: 40px;
-    margin-left: 100px;
-    padding-top: 20px;
-    padding-bottom : 20px;
-    text-align: center;
-    width: 300px;
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-.f2 {
-    text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 1);
-}
-
-.f3 {
-    margin-top: 40px;
-    margin-left: 400px;
-    padding-top: 20px;
-    padding-bottom : 20px;
-    text-align: center;
-    width: 300px;
-    background-color: rgba(255, 255, 255, 0.2);
 }
