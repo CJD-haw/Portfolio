@@ -75,3 +75,17 @@ body {
 .res-head a:hover {
     color: white;
 }
+
+.rh-inactive {
+    display: none;
+}
+
+@media screen and (max-width: 650px) {
+    .rh-inactive {
+        display: inline;
+    }
+    .rh-active {
+        display: none;
+    }
+}
+
