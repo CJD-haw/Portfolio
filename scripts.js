@@ -34,6 +34,7 @@ function showEducation() {
     document.getElementById("educationHide").style.display = "block";
 }
 
+
 function hideEducation() {
     document.getElementById("educationShow").style.display = "block";
     document.getElementById("educationHide").style.display = "none";
