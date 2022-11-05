@@ -12,76 +12,135 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-  <div class="topnav" id="myTopnav">
-    <a href="#home" class="active" id="i1" onclick="activation(1)">
-      <i class="fa fa-fw fa-home"></i> HOME
-    </a>
-    <a href="#award" class="inactive" id="i2" onclick="activation(2)">
-      <i class="fa fa-light fa-star"></i> AWARD
-    </a>
-    <a href="#project" class="inactive" id="i3" onclick="activation(3)">
-      <i class="fa fa-fw fa-code"></i> PROJECT
-    </a>
-    <a href="#resume" class="inactive" id="i4" onclick="activation(4)">
-      <i class="fa fa-file-text"></i> RESUME
-    </a>
-    <a href="#contact" class="inactive" id="i5" onclick="activation(5)">
-      <i class="fa fa-fw fa-envelope"></i> CONTACT
-    </a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-    
-  <!-- Carousel -->
-  <div id="award" class="carousel slide m-5" data-bs-ride="carousel">
 
-    <!-- Indicators/dots -->
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#award" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#award" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#award" data-bs-slide-to="2"></button>
+  <div class="container-fluid " id="resume">
+
+    <div class="container-fluid mt-3 py-2 text-white bg-white bg-opacity-25" id="profileShow">
+      <p class="h1 text-center res-head">
+        <span onclick="showProfile()" style="cursor: pointer;"><i class="fa fa-user"></i> PROFILE</span>
+      </p>
     </div>
 
-    <!-- The slideshow/carousel -->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="sivakasi.png" alt="Sivakasi" class="d-block w-100">
-      </div>
-      <div class="carousel-item">
-        <img src="anand.png" alt="Anand" class="d-block w-100">
-      </div>
-      <div class="carousel-item">
-        <img src="delhi.png" alt="New Delhi" class="d-block w-100">
-      </div>
+    <div class="container-fluid mt-3 py-2 text-white bg-white bg-opacity-25" id="profileHide">
+      <p class="h1 text-center res-head">
+        <span onclick="hideProfile()" style="cursor: pointer;"><i class="fa fa-user"></i> PROFILE</span>
+      </p>
+      
+      <div class="divider my-1 mb-3 pt-1 bg-white bg-opacity-25"></div>
+      <p class="h1 px-4" style="letter-spacing: 1vw;">JEYA SURIYA C</p>
+      <p class="h6 res px-4" style="line-height: 5vh;">
+        <a href="mailto:cjsuriya96@gmail.com" target="_blank"><i class="fa fa-envelope"></i> cjsuriya96@gmail.com</a><br>
+        <a href="https://wa.me/9361288897" target="_blank"><i class="fa fa-whatsapp"></i> 9361288897</a><br>
+        <a href="https://en.wikipedia.org/wiki/Sivagiri,_Tenkasi" target="_blank"><i class="fa fa-map-marker"></i> Sivagiri</a>
+      </p>
     </div>
 
-    <!-- Left and right controls/icons -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#award" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#award" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
-  
+    <div class="container-fluid mt-3 py-2 text-white bg-white bg-opacity-25" id="objectiveShow">
+      <p class="h1 text-center res-head">
+        <span onclick="showObjective()" style="cursor: pointer;"><i class="fa fa-bullseye"></i> OBJECTIVE</span>
+      </p>
+    </div>
 
-  <div class="container mt-5 vw-75 p-4 text-center text-white bg-white bg-opacity-25" id="resume">
-    <p class="h1">JEYA SURIYA</p>
-    <p class="h6 res-head rh-active">
-      <a href="#"><i class="fa fa-envelope"></i> cjsuriya96@gmail.com</a>
-      <a href="https://wa.me/9361288897"><i class="fa fa-phone"></i> 9361288897</a>
-      <a href="https://en.wikipedia.org/wiki/Sivagiri,_Tenkasi"><i class="fa fa-map-marker"></i> Sivagiri</a>
-    </p>
-    <p class="h6 res-head rh-inactive">
-      <a href="#"><i class="fa fa-envelope"></i> cjsuriya96@gmail.com</a><br>
-      <a href="https://wa.me/9361288897"><i class="fa fa-phone"></i> 9361288897</a><br>
-      <a href="https://en.wikipedia.org/wiki/Sivagiri,_Tenkasi"><i class="fa fa-map-marker"></i> Sivagiri</a>
-    </p>
+    <div class="container-fluid mt-3 py-2 text-white bg-white bg-opacity-25" id="objectiveHide">
+      <p class="h1 text-center res-head">
+        <span onclick="hideObjective()" style="cursor: pointer;"><i class="fa fa-bullseye"></i> OBJECTIVE</span>
+      </p>
+
+      <div class="divider my-1 mb-3 pt-1 bg-white bg-opacity-25"></div>
+      <P class="h6 text-start px-4" style="text-align: justify;">Securing Challenging Position in Reputational Organization to Expand my Learning and Skill</P>
+    </div>
+
+    <div class="container-fluid mt-3 py-2 text-white bg-white bg-opacity-25" id="educationShow">
+      <p class="h1 text-center res-head">
+        <span onclick="showEducation()" style="cursor: pointer;"><i class="fa fa-graduation-cap"></i> EDUCATION</span>
+      </p>
+    </div>
+
+    <div class="container-fluid mt-3 py-2 text-white bg-white bg-opacity-25" id="educationHide">
+      <p class="h1 text-center res-head">
+        <span onclick="hideEducation()" style="cursor: pointer;"><i class="fa fa-graduation-cap"></i> EDUCATION</span>
+      </p>
+
+      <div class="divider my-1 mb-3 pt-1 bg-white bg-opacity-25"></div>
+      <P class="h6 text-start px-4" style="text-align: justify;"></P>
+    </div>
+
+    <div class="container-fluid mt-3 py-2 text-white bg-white bg-opacity-25" id="skillShow">
+      <p class="h1 text-center res-head">
+        <span onclick="showSkill()" style="cursor: pointer;"><i class="fa fa-cogs"></i> SKILL</span>
+      </p>
+    </div>
+
+    <div class="container-fluid mt-3 py-2 text-white bg-white bg-opacity-25" id="skillHide">
+      <p class="h1 text-center res-head">
+        <span onclick="hideSkill()" style="cursor: pointer;"><i class="fa fa-cogs"></i> SKILL</span>
+      </p>
+
+      <div class="divider my-1 mb-3 pt-1 bg-white bg-opacity-25"></div>
+      <P class="h6 text-start px-4" style="text-align: justify;"></P>
+    </div>
+
+    <div class="container-fluid mt-3 py-2 text-white bg-white bg-opacity-25" id="competitionShow">
+      <p class="h1 text-center res-head">
+        <span onclick="showCompetition()" style="cursor: pointer;"><i class="fa fa-bullseye"></i> COMPETITION</span>
+      </p>
+    </div>
+
+    <div class="container-fluid mt-3 py-2 text-white bg-white bg-opacity-25" id="competitionHide">
+      <p class="h1 text-center res-head">
+        <span onclick="hideCompetition()" style="cursor: pointer;"><i class="fa fa-bullseye"></i> COMPETITION</span>
+      </p>
+
+      <div class="divider my-1 mb-3 pt-1 bg-white bg-opacity-25"></div>
+      <P class="h6 text-start px-4" style="text-align: justify;"></P>
+    </div>
+
+    <div class="container-fluid mt-3 py-2 text-white bg-white bg-opacity-25" id="achievementShow">
+      <p class="h1 text-center res-head">
+        <span onclick="showAchievement()" style="cursor: pointer;"><i class="fa fa-trophy"></i> ACHIEVEMENT</span>
+      </p>
+    </div>
+
+    <div class="container-fluid mt-3 py-2 text-white bg-white bg-opacity-25" id="achievementHide">
+      <p class="h1 text-center res-head">
+        <span onclick="hideAchievement()" style="cursor: pointer;"><i class="fa fa-trophy"></i> ACHIEVEMENT</span>
+      </p>
+
+      <div class="divider my-1 mb-3 pt-1 bg-white bg-opacity-25"></div>
+      <P class="h6 text-start px-4" style="text-align: justify;"></P>
+    </div>
+
+    <div class="container-fluid mt-3 py-2 text-white bg-white bg-opacity-25" id="projectShow">
+      <p class="h1 text-center res-head">
+        <span onclick="showProject()" style="cursor: pointer;"><i class="fa fa-code"></i> PROJECT</span>
+      </p>
+    </div>
+
+    <div class="container-fluid mt-3 py-2 text-white bg-white bg-opacity-25" id="projectHide">
+      <p class="h1 text-center res-head">
+        <span onclick="hideProject()" style="cursor: pointer;"><i class="fa fa-code"></i> PROJECT</span>
+      </p>
+
+      <div class="divider my-1 mb-3 pt-1 bg-white bg-opacity-25"></div>
+      <P class="h6 text-start px-4" style="text-align: justify;"></P>
+    </div>
+
+    <div class="container-fluid mt-3 py-2 text-white bg-white bg-opacity-25" id="organizationShow">
+      <p class="h1 text-center res-head">
+        <span onclick="showOrganization()" style="cursor: pointer;"><i class="fa fa-briefcase"></i> ORGANIZATION</span>
+      </p>
+    </div>
+
+    <div class="container-fluid mt-3 py-2 text-white bg-white bg-opacity-25" id="organizationHide">
+      <p class="h1 text-center res-head ">
+        <span onclick="hideOrganization()" style="cursor: pointer;"><i class="fa fa-briefcase"></i> ORGANIZATION</span>
+      </p>
+
+      <div class="divider my-1 mb-3 pt-1 bg-white bg-opacity-25"></div>
+      <P class="h6 text-start px-4" style="text-align: justify;"></P>
+    </div>
+
   </div>
-  
-  <div class="container-fluid my-5" id="contact">
-    <img src="banner.png" alt="Banner Image" class="img-thumbnail">
-  </div>
+
 </body>
 </html>
