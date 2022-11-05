@@ -76,8 +76,13 @@ body {
     color: white;
 }
 
-.rh-inactive {
-    display: none;
+@media screen and (min-width: 650px) {
+    .rh-inactive {
+        display: none;
+    }
+    .rh-active {
+        display: inline;
+    }
 }
 
 @media screen and (max-width: 650px) {
