@@ -14,8 +14,7 @@ body {
     color: black;
 }
 
-#profileHide, #objectiveHide, #educationHide, #skillHide,
- #competitionHide, #achievementHide, #projectHide, #organizationHide {
+#profileHide, #objectiveHide, #educationHide, #skillHide, #competitionHide, #achievementHide, #projectHide, #organizationHide {
     display: none;
 }
 
