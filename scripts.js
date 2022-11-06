@@ -1,4 +1,3 @@
-
 function showProfile() {
     document.getElementById("profileShow").style.display = "none";
     document.getElementById("profileHide").style.display = "block";
